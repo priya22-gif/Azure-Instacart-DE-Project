@@ -4,6 +4,14 @@
 
 In e-commerce analytics, raw operational data from multiple sources (e.g., SQL databases, GitHub datasets, ADLS files) is not immediately suitable for analytics or reporting. This project builds a scalable, automated Azure data engineering solution that ingests, transforms, and models Instacart market data into analytics-ready datasets, using modern data engineering best practices such as metadata-driven ingestion and medallion (Bronze–Silver–Gold) architecture.
 
+## 📌 Project Overview
+
+This project demonstrates an end-to-end Azure Data Engineering solution built on Instacart Market Analytics, utilizing a modern lakehouse architecture.
+
+The goal of the project is to ingest data from multiple sources, process it using PySpark transformations, and deliver data for analytics and business reporting.
+
+The solution is designed using best practices such as metadata-driven ingestion, incremental data loading, parameterized pipelines, Delta Lake optimization, Slowly Changing Dimensions (SCD), workflow orchestration, and monitoring.
+
 ## 🎯 Business Use Cases
 This pipeline enables:
 - Product-level and category-level performance analysis
@@ -17,14 +25,6 @@ With the curated datasets, stakeholders can analyze:
 - User engagement patterns (active vs repeat customers)
 - Most popular products and aisles by volume
 - Order frequency and lifecycle trends over time
-
-## 📌 Project Overview
-
-This project demonstrates end-to-end Azure Data Engineering solution built on the Instacart Market Analytics using a modern lakehouse architecture.
-
-The goal of the project is to ingest data from multiple sources, process it using pyspark transformations and deliver data for analytics and business reporting.
-
-The solution is designed using best practices such as metadata-driven ingestion, incremental data loading, parameterized pipelines, Delta Lake optimization, Slowly Changing Dimensions (SCD), workflow orchestration, and monitoring.
 
 ## 🏗️ Architecture Overview:
 
@@ -133,7 +133,7 @@ The solution is designed using best practices such as metadata-driven ingestion,
 
 ****🥇 Gold Layer****
 
-  - Gold layer is designed using a star schema for BI consumption.
+  - The gold layer is designed using a star schema for BI consumption.
 
     
 <img width="1919" height="952" alt="Screenshot 2025-12-31 184235" src="https://github.com/user-attachments/assets/63d46f70-8ab0-4de7-a976-17202b066811" />
